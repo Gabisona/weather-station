@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta http-equiv = 'refresh' content = '5'
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/style.css">
+  <title>Estação Meteorológica</title>
+</head>
+  
+<body>
+    <header class="header-top">
+      
+        <img src="../static/images/logo.png" class="img-logo">
+        <nav class="header-itens">
+          <a href="#estacao" class="a-top"><b>ESTAÇÃO</b></a>
+          <a href="#sobre-projeto" class="a-top"><b>SOBRE O PROJETO</b></a>
+          <a href="#sobre-nos" class="a-top"><b>SOBRE NÓS</b></a>
+        </nav>
+      
+    </header>
+
+    <main class="main">
+      
+      <div id="sobre-projeto" class="container-sobre">
+        <div class="card">
+         <div class="sobre-projeto">
+        
+          <h1 class="titulo-sobre">SOBRE O NOSSO PROJETO</h1>
+           <div class="corpo-txt">
+             <p class="txt"><b>O objetivo deste projeto é criar uma comunicação entre um banco de dados e um broker usando a plataforma Arduino. O Arduino será responsável por conectar-se ao banco de dados ao broker, permitindo o envio e recebimento de dados entre eles. Sendo assim mostrando os dados da temperatura e umidade em tempo real.</b></p>
+             
+           </div>
+           <a href="#estacao" class="btn"><b>ESTAÇÃO METEREOLÓGICA</b></a>
+        
+        </div>
+  
+        <img src="../static/images/inicio.png" class="tornado">   
+        </div>
+      </div>
+      
+      <div id="estacao" class="container-estacao">
+        <div class="card">
+          <img src="../static/images/chuva.png">
+        
+            <div class="temp-umi">
+            <p>TEMPERATURA: {{temperatura}}</p><br>
+            <p>UMIDADE: {{umidade}}</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="sobre-nos" class="sobre-pai">
+        <div class="sobre-nos">
+            <h1 class="sobre">SOBRE NÓS</h1>
+            <p class="txt-sobre"><b>Somos uma equipe da estação meteorológica contratada pela empresa SpaceX.<br> Nosso objetivo é fornecer dados climáticos em nosso site. <br>Este projeto foi desenvolvido por quatro programadores incríveis: Camila Jarosz,<br>Luiza Martins, Gabrielli Alves e Lucas Danker.</b></p>
+        </div>
+        <img class="equipe" src="../static/images/equipe.png"> 
+      </div>
+    </main>
+
+    <footer class="footer">
+      
+    </footer>
+
+</body>
+</html>

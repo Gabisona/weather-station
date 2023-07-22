@@ -1,0 +1,210 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Roboto+Mono:wght@300&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+
+/*width: altura*/
+/*heigth: largura*/
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  font-size: 100%;
+  background: rgb(222, 222, 222);
+}
+
+.main{
+  display: grid;
+  gap: 2rem; /*espaçamento entre os cards*/
+}
+
+.header-top{
+  background-color: #0f0f0f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+.header-itens{
+  font-family: 'Roboto Mono', monospace;
+  font: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 8vh;
+}
+
+.a-top{
+  cursor: pointer;
+  color: #f0f4f4;
+}
+
+.img-logo{
+  width: 5vw;
+}
+
+.container-sobre{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh; /*Consumir a tela inteira*/
+  background-color: #0a1b42;
+  padding-top: 10vh;
+}
+
+.sobre-projeto{
+  color: #ffffff;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 60%;
+  gap: 8%;
+}
+
+.tornado{
+  object-fit: contain;
+  height: 60vh;
+  margin: auto 0;
+}
+
+.titulo-sobre{
+  margin-top: 5%;
+  font-size: 250%;
+  font-family: 'Belanosima', sans-serif;
+}
+
+.txt{
+  color: #c2dfff;
+  font-size: 130%;
+  font-family: 'Dosis', sans-serif;
+}
+
+.corpo-txt{
+  display: flex;
+  align-items: center;
+  width: 60%;
+  text-align: start;
+}
+
+.btn{
+  color: #0a1b42;
+  padding: 0.7%;
+  text-align: center;
+  width: 15vw;
+  height: 5vh;
+  font-family: 'Dosis', sans-serif;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: #a6bae7;
+}
+
+.btn:hover{
+  background-color: transparent;
+  border: 2px solid #a6bae7;
+  border-radius: 30px;
+  color: #a6bae7;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 700px){
+  .container-sobre{
+    flex-direction: column-reverse;
+  }
+
+  .tornado,
+  .sobre-projeto {
+    width: 100%;
+  }
+
+  .tornado {
+    height: 40%;
+    margin: 0;
+  }
+}
+
+.container-estacao{
+  display: flex;
+  justify-content: center;
+}
+
+.temp-umi{
+  font-family: 'Belanosima', sans-serif;
+  font-size: 130%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;  
+}
+
+.sobre-pai{
+  display: flex;
+  justify-content: center;
+}
+
+.sobre-nos{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  word-break: break-all;
+
+}
+
+.equipe{
+  object-fit: contain;
+  height: 90vh;
+  margin: auto 0;
+}
+
+.sobre{
+  color: #0a1b42;
+  font-size: 250%;
+  font-family: 'Belanosima', sans-serif;
+}
+
+.txt-sobre{
+  text-align: center;
+  color: #0155b7;
+  font-size: 130%;
+  font-family: 'Dosis', sans-serif;
+}
+
+.footer{
+  width: 100%;
+  height: 8vh;
+  background-color: #0a1b42;;
+}
